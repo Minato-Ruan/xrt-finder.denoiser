@@ -1,0 +1,45 @@
+body {
+    font-family: "Poppins", sans-serif;
+    animation: bg-in 5s;
+    background-color: var(--app-color-dark);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    animation: bg-in 5s;
+}
+
+
+.login-box{
+    background: var(--app-color-light);
+    margin-top: 10px !important;
+    width: 95vw;
+    height: 95vh;
+    padding: 20px;
+}
+
+.fadeIn{
+    opacity: 1;
+    animation: fade-in 2s;
+}
+
+@keyframes bg-in {
+    0% { background: var(--app-icons-2-hex);}
+    20% { background: var(--app-icons-3-hex);}
+    40% { background: var(--app-icons-4-hex);}
+    60% { background: var(--app-icons-5-hex);}
+    80% { background: var(--app-icons-1-hex);}
+    100% { background: var(--app-color-dark);}
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
